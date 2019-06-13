@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+
+body {
+	font-family: 'Dosis', sans-serif;
+}
+h3 {
+	color: #00EEFF;
+	font-family: 'Dosis', sans-serif;
+}
+span {
+	color: #B16FB5;
+}
+p {
+	color: #FFF;
+}
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
+.navbar {
+	background: #FFF!important;
+}
+#navbarNavDropdown > ul > li.nav-item > a {
+	font-weight: 600;
+}
+#navbarNavDropdown > ul > li.nav-item.active > a {
+	color: #7B2981;
+}
+.navbar img {
+	width: 200px;
+	height: 150px;
+}
+.carrusel {
+	width: 100%;
+	height: 100vh;
+}
+.carousel-caption {
+	top: 50%;
+	transform: translateY(-50%);
+	bottom: initial;
+}
+.carousel-caption h5 {
+	font-size: 4em;
+	font-weight: bolder;
+	text-shadow: 2px 2px 7px #000;
+	color: #00EEFF;
+}
+.carousel-caption p {
+	font-size: 2em;
+	color: #FFF;
+	font-weight: bold;
+	text-shadow: 2px 2px 7px #000;
+}
+.item {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.bounceIn,.bounceInLeft,.bounceInDown {
+	animation-delay: 1s;
+}
+.bounceInUp,.bounceInRight {
+	animation-delay: 1.2s;
+}
+
+#Nosotros {
+	background-color: #230439;
+}
+#Nosotros span {
+	font-size: 1.8em;
+}
+#Nosotros h3 {
+	font-size: .8em;
+}
+.nosotros {
+	background-color: #230439;
+	color: #FFF;
+	font-size: 1.2em;
+	padding-top: 150px;
+	padding-bottom: 100px;
+}
+.nosotros-img {
+	background-image: url("nosotros.jpg");
+	background-repeat: no-repeat;
+  	background-size: auto;
+}
+
+#Habitaciones {
+	background-image: url("foto2.jpg");
+	background-repeat: no-repeat;
+  	background-size: auto;
+}
+#Habitaciones .container-full {
+	background-color: rgba(123,41,129,.9);
+}
+#Habitaciones h3 {
+	font-size: 3em;
+}
+#Habitaciones p {
+	font-size: 1.2em;
+}
+#Habitaciones span {
+	color: #00EEFF;
+}
+#Habitaciones img {
+	width: 100px;
+	height: 100px;
+}
+.habitacion {
+	padding: 20px;
+	color: #FFF;
+}
+#Servicios {
+	background-image: url("fondo.jpg");
+	background-size: cover;
+}
+#Servicios h3, #Servicios p {
+	color: #7B2981!important;
+	font-size: 2em;
+}
+#Servicios p {
+	font-size: 1.5em;
+}
+footer img {
+	width: 200px;
+	padding-bottom: 20px;
+}
+footer span {
+	color: #BCBABA;
+}
+footer p {
+	color: #000;
+	font-size: 1.3em;
+}
+
+/*Animaciones*/
+.zoomImg {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+.zoomImg img {
+	animation: zoonIn 2s;
+}
+@keyframes zoomIn {
+	0%{
+		width: 200px;
+	}
+	100%{
+		width: 100%;
+	}
+}
+/*Animaciones*/
