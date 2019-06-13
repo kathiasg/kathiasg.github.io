@@ -15,9 +15,9 @@
 		<link rel="stylesheet" href="animate.css">
 	    <!--Animaciones-->
 	</head>
-	<body>
+	<body data-spy="scroll" data-target=".navbar" data-offset="150">
 		<header>
-			<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between fixed-top">
 			  <a class="navbar-brand" href="#">
 			  	<img src="logo-01.png" alt="">
 			  </a>
@@ -26,30 +26,23 @@
 			  </button>
 			  <div class="collapse navbar-collapse" id="navbarNavDropdown">
 			    <ul class="navbar-nav">
-			      <li class="nav-item active">
-			        <a class="nav-link" href="#">Nosotros <span class="sr-only">(current)</span></a>
+			      <li class="nav-item">
+			        <a class="nav-link" data-scroll href="#Nosotros">Nosotros <span class="sr-only">(current)</span></a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="#">Habitaciones</a>
+			        <a class="nav-link" href="#Habitaciones">Habitaciones</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="#">Servicios</a>
+			        <a class="nav-link" href="#Servicios">Servicios</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="#">Galeria</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="#">Promociones</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="#">Contacto</a>			      
-			      </li>
-			      
+			        <a class="nav-link" href="galeria.html">Galeria</a>
+			      </li>			      
 			    </ul>
 			  </div>
 			</nav>			
 		</header>
-		<section>
+		<section id="principal">
 			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 		        <div class="carousel-inner bg-info" role="listbox">
 		            <div class="carousel-item active">
@@ -124,54 +117,56 @@
 			<div class="container-full pt-5">
 				<div class="container pt-3 pb-5 text-center">
 					<div class="row justify-content-md-center">
-						<div class="col-5">
+						<div class="col-md-5 text-justify col-xs-1 ">
 							<h3>Habitaciones</h3>
 							<p>Contamos con 5 diferentes tipos de habitación, todas ellas cuentan con una novedosa cama redonda, pantalla HD, DVD, aire acondicionado, estéreo con entrada USB, y un divertido rincón erótico llamado fajódromo. </p>
 							<span>Tenemos WIFI y estacionamiento gratuito para nuestros clientes.</span>	
 						</div>
 					</div>	
 					<div class="row justify-content-md-center pt-4">
-						<div class="habitacion">
-							<img src="foto1.jpg" class="rounded-circle" alt="Cinque Terre">
-							<h4>Suite Standard</h4>	
-						</div>
-						<div class="habitacion">
-							<img src="foto1.jpg" class="rounded-circle" alt="Cinque Terre">	
-							<h4>Suite Jacuzzi</h4>
-						</div>
-						<div class="habitacion">
-							<img src="foto1.jpg" class="rounded-circle" alt="Cinque Terre">	
-							<h4>Villa Standard</h4>
-						</div>
-						<div class="habitacion">
-							<img src="foto1.jpg" class="rounded-circle" alt="Cinque Terre">	
-							<h4>Villa Jacuzzi</h4>
-						</div>
-						<div class="habitacion">
-							<img src="foto1.jpg" class="rounded-circle" alt="Cinque Terre">	
-							<h4>Villa Alberca</h4>
+						<div class="col-md-8 col-xs-2">
+							<div class="habitacion">
+								<img src="foto1.jpg" class="rounded-circle" alt="Cinque Terre">
+								<h4>Suite Standard</h4>	
+							</div>
+							<div class="habitacion">
+								<img src="foto2.jpg" class="rounded-circle" alt="Cinque Terre">	
+								<h4>Suite Jacuzzi</h4>
+							</div>	
+							<div class="habitacion">
+								<img src="foto3.jpg" class="rounded-circle" alt="Cinque Terre">	
+								<h4>Villa Standard</h4>
+							</div>
+							<div class="habitacion">
+								<img src="foto4.jpg" class="rounded-circle" alt="Cinque Terre">	
+								<h4>Villa Jacuzzi</h4>
+							</div>	
 						</div>
 					</div>				
 				</div>
 			</div>
 		</section>
 		<section id="Servicios">
-			<div class="row justify-content-md-center pt-4">
-				<div class="col-5 text-center">
-					<h3>Servicios</h3>
-					<p>Sabemos que los detalles son importantes, por eso tenemos servicio las 24 horas de alimentos, bebidas y articulos sex shop para complementar tu estancia.</p>
-				</div>
+			<div class="container">
+				<div class="row justify-content-md-center pt-5 pb-5">
+					<div class="col-md-5 col-xs-1 text-center pt-5 pb-5">
+						<h3 class="pt-5">Servicios</h3>
+						<p class="pb-5">Sabemos que los detalles son importantes, por eso tenemos servicio las 24 horas de alimentos, bebidas y articulos sex shop para complementar tu estancia.</p>
+					</div>
+				</div>			
 			</div>
 		</section>
 		<footer>
-			<div class="row">
-				<div class="col text-center pt-5 pb-5">
-					<img src="logo-01.png" alt="logo">
-					<p>Tel. 5959550157 | hotelvillasxala@gmail.com</p>
-					<p>&copy; 2019 Hotel & Villas Xala. Todos los derechos reservados.</p>
-					<p><span>Diseñado por: Kathia Shantal | Alejandra Trejo | Erick García</span></p>
-				</div>
-			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col text-center pt-5 pb-5">
+						<img src="logo-01.png" alt="logo">
+						<p>Tel. 5959550157 | hotelvillasxala@gmail.com</p>
+						<p>&copy; 2019 Hotel & Villas Xala. Todos los derechos reservados.</p>
+						<p><span>Diseñado por: Kathia Shantal | Alejandra Trejo | Erick García</span></p>
+					</div>
+				</div>	
+			</div>			
 		</footer>
 		<!--Funciones web para complementos y animaciones-->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -181,6 +176,7 @@
 	    	$('.carousel').carousel({
 			  interval: 5000
 			});
+			
 	    </script>
 	    <!--Funciones web para complementos y animaciones-->
 	</body>

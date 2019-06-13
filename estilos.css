@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
 
+html {
+	scroll-behavior: smooth;
+}
 body {
 	font-family: 'Dosis', sans-serif;
 }
@@ -25,6 +28,9 @@ p {
 }
 #navbarNavDropdown > ul > li.nav-item.active > a {
 	color: #7B2981;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #7B2981;
 }
 .navbar img {
 	width: 200px;
@@ -62,7 +68,9 @@ p {
 .bounceInUp,.bounceInRight {
 	animation-delay: 1.2s;
 }
-
+#principal {
+	margin-top: 176px;
+}
 #Nosotros {
 	background-color: #230439;
 }
@@ -107,8 +115,9 @@ p {
 	height: 100px;
 }
 .habitacion {
-	padding: 20px;
 	color: #FFF;
+	display: inline-block;
+	padding: 0 10px;
 }
 #Servicios {
 	background-image: url("fondo.jpg");
@@ -131,6 +140,26 @@ footer span {
 footer p {
 	color: #000;
 	font-size: 1.3em;
+}
+
+
+
+#galeria-principal h1,#galeria-principal h2 {
+	margin-top: 176px;
+	color: #7B2981!important;
+}
+#galeria-principal h2 {
+	margin-top: 0;
+	font-size: 1.3em;
+}
+#galeria-principal img {
+	width: 24%;
+	height: 80%;
+	margin: 0;
+}
+#galeria-principal .col-12 {
+	height: 100%;
+	padding: 2px 0;
 }
 
 /*Animaciones*/
